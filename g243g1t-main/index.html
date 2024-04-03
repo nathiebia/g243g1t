@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script/script.js"></script>
-    <link rel="stylesheet" href="./estilo/base.css">
+    <link rel="stylesheet" href="./style/base.css">
 </head>
 <body>
     <header class="barra">
@@ -13,24 +13,36 @@
         <span class="tablet">Tablet</span>
         <span class="desktop">Desktop</span>
     </header>
+    <section class="conteudo">
+        <div class="sorteio">
+            
+         <section class="conteudo">
+            <div class="botoes">
+                <button id="aba1" class="btn" onclick="abrir(1)">Aba 1</button>
+                <button id="aba2" class="btn" onclick="abrir(2)">Aba 2</button>
+                <button id="aba3" class="btn" onclick="abrir(3)">Aba 3</button>
+                <button id="aba4" class="btn" onclick="abrir(4)">Aba 4</button>
+                <button id="aba5" class="btn" onclick="abrir(5)">Aba 5</button>
+            </div>
+            <div class="abas">
+                <div id="a1" class="aba1">
+                <span id="h"></span>
+            </div>
+                <div id="a2"class="aba2">
+                Contar de: <input type="number" id="inicio">
+                até: <input type="number" id="fim"><br>
+                <button onclick="iniciarContagem()">Contar</button><br>
+                <span id="valor"></span>
+            </div>
 
-<section class="conteudo">
-<div class="botoes">
-    <button id="aba1" class="btn" onclick="abrir(1)">Aba 1</button>
-    <button id="aba2" class="btn" onclick="abrir(2)">Aba 2</button>
-    <button id="aba3" class="btn" onclick="abrir(3)">Aba 3</button>
-    <button id="aba4" class="btn" onclick="abrir(4)">Aba 4</button>
-    <button id="aba5" class="btn" onclick="abrir(5)">Aba 5</button>
-</div>
-<div class="abas">
-    <div id="a1" class="aba1">Estou na aba 1</div>
-    <div id="a2" class="aba2">Estou na aba 2</div>
-    <div id="a3" class="aba3">Estou na aba 3</div>
-    <div id="a4" class="aba4">Estou na aba 4</div>
-    <div id="a5" class="aba5">Estou na aba 5</div>
-</div>
-</section>
+                <div id="a3" class="aba3">Estou na Aba 3</div>
+                <div id="a4" class="aba4">Estou na Aba 4</div>
+                <div id="a5" class="aba5">Estou na Aba 5</div>
+            </div>
 
+         </section>
 
+        </div>
+    </section>
 </body>
 </html>
